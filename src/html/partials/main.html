@@ -1,0 +1,44 @@
+<main class="page__main">
+  <section class="favourites">
+    <div>
+      <article><h2>Favourites</h2></article>
+    </div>
+    <div>
+      <article><h3>Your favourites</h3></article>
+      <button class="reset-button hide js-reset hidden">Reset 🗑️</button>
+      <ul class="js-favourites">
+        <!-- //Here we add favourites shows -->
+      </ul>
+    </div>
+  </section>
+  <section class="search js-search">
+    <h1 class="choose">Choose a show</h1>
+    <form id="form-search" class="search-form" action="" method="POST">
+      <label for="search" class="search-label"><h2>Search here!</h2></label>
+      <input
+        id="search-input"
+        class="search__input js-search-input"
+        name="search"
+        type="text"
+        placeholder="Devs"
+      />
+      <button
+        id="search-button"
+        class="search__button js-search-button"
+        type="button"
+      >
+        Start
+      </button>
+      <button
+        id="log-button"
+        class="search__button js-log-button"
+        type="button"
+      >
+        Log
+      </button>
+      <ul class="js-elements">
+        <!-- //Here we add shows searched -->
+      </ul>
+    </form>
+  </section>
+</main>

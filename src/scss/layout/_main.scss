@@ -1,0 +1,63 @@
+.page__main {
+  background-color: $fakepure-color;
+  margin-top: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 5% 35% 20% 40%;
+  grid-template-rows: 0.1fr 0.5fr 1fr;
+  .favourites {
+    grid-row: 2/4;
+    grid-column: 2/3;
+  }
+  .search {
+    grid-row: 2/4;
+    grid-column: 4/5;
+    &__button {
+      background-color: $joy-color;
+      width: 50px;
+      font-weight: bold;
+      color: $strong-color;
+      border-radius: 22.5px;
+      margin-left: 70px;
+      margin-top: 20px;
+    }
+    &__input {
+      width: 200px;
+      margin-left: 10px;
+    }
+  }
+  .favourite-background-click {
+    background-color: $fem-color;
+    width: 220px;
+    color: $fakepure-color;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .favourite-background {
+    background-color: $joy-color;
+    width: 220px;
+    color: $fem-color;
+    margin: 10px;
+    list-style: none;
+    border-radius: 15px;
+  }
+  .js-seriesSelected {
+    margin: 10px;
+    list-style: none;
+    font-weight: bold;
+  }
+  .reset-button {
+    background-color: $fakepure-color;
+    border-color: $fakepure-color;
+    width: 80px;
+    font-weight: bold;
+    color: $fem-color;
+    border-radius: 22.5px;
+  }
+  .hide {
+    display: none;
+  }
+}
